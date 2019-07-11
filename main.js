@@ -56,7 +56,7 @@ var session = require('express-session');
 const db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', () => { console.log('Connected to mongodb server'); });
-mongoose.connect('mongodb://localhost:27018/codelab');
+mongoose.connect('mongodb://localhost:27017/cokkiri');
 // mongoose.connect('mongodb://username:password@host:port/database=');
 //-> for 팀원 : mongoDB를 설치하고 start 한 후 접속해야합니다
 
@@ -66,4 +66,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
+
+//STEP5 : mongoDB에 데이터 생성/조회/삭제/변경
+
 var Volenteer = require('./models/volenteer');
+var router = require('./routes')(app, Volenteer)
