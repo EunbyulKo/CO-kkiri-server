@@ -35,6 +35,6 @@ Node.js, Express, Mongoose 실습을 위한 프로젝트 입니다
 
 
 ## 기타 참고자료
-  > [Node.js 튜토리얼](https://poiemaweb.com/nodejs-module)
+  > [Node.js 튜토리얼](https://poiemaweb.com/nodejs-basics)
   
 
