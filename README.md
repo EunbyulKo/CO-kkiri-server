@@ -31,6 +31,7 @@ Node.js, Express, Mongoose 실습을 위한 프로젝트 입니다
 + 여기까지 진행할 때 참고한 자료
   > + [MongoDB 강좌 1편: 소개, 설치 및 데이터 모델링](https://velopert.com/436)
   > + [Express와 Mongoose를 통해 MongoDB와 연동하여 RESTful API 만들기](https://velopert.com/594)
+  > + [PostMan 사용방법](https://meetup.toast.com/posts/107)
 
 
 
