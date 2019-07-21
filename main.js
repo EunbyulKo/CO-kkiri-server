@@ -69,5 +69,5 @@ app.use(session({
 
 //STEP5 : mongoDB에 데이터 생성/조회/삭제/변경
 
-var Volenteer = require('./models/volenteer');
-var router = require('./routes')(app, Volenteer)
+var volenteer = require('./routes/volenteer');
+app.use('/api/volenteer', volenteer);
