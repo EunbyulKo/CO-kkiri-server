@@ -31,3 +31,5 @@ app.use(session({
 
 var volenteer = require('./routes/volenteer');
 app.use('/api/volenteer', volenteer);
+
+module.exports = app;
