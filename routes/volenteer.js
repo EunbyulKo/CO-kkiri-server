@@ -3,6 +3,10 @@ var router = express.Router();
 var Volenteer = require('../models/volenteer');
 
 router.post('/', function(req, res){
+    if(!req.body.name) {
+        return res.status(404).json({error: 'invalid data'});
+    }
+
     var volenteer = new Volenteer();
     volenteer.name = req.body.name;
     volenteer.introduce = req.body.introduce;
@@ -36,7 +40,7 @@ router.get('/:volenteer_id', function(req, res){
 });
 
 router.get('/name/:name', function(req, res){
-    Volenteer.find({name: req.params.name}, {_id: 0, name: 1, introduce: 1},  function(err, volenteers){
+    Volenteer.find({name: req.params.name}, {_id: 1, name: 1, introduce: 1},  function(err, volenteers){
         if(err) return res.status(500).json({error: err});
         if(volenteers.length === 0) return res.status(404).json({error: 'volenteer not found'});
         res.json(volenteers);
