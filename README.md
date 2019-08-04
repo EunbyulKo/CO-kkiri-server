@@ -36,5 +36,21 @@ Node.js, Express, Mongoose 실습을 위한 프로젝트 입니다
 
 ## 기타 참고자료
   > [Node.js 튜토리얼](https://poiemaweb.com/nodejs-basics)
+
+
+## 4. TDD 적용
+1. 필요한 모듈 설치
+```
+npm install --save-dev mocha chai supertest
+npm install --save-dev babel-cli babel-preset-node6 babel-register
+```
+2. 스크립트 및 기본 테스트
+3. 테스트 코드 추가
+
++ 여기까지 진행할 때 참고한 자료
+  > + [Node.js 로 TDD 를 도전해보자](https://seokjun.kim/node-js-tdd/)
+  > + [compilers deprecation](https://github.com/mochajs/mocha/wiki/compilers-deprecation)
+  > + [mongoose 테스트 및 node 연동](https://harrythegreat.tistory.com/entry/mongoose-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B0%8F-node-%EC%97%B0%EB%8F%99)
+
   
 
