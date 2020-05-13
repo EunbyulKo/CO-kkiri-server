@@ -23,8 +23,10 @@ db.on('error', console.error);
 db.once('open', () => { console.log('Connected to mongodb server'); });
 mongoose.connect('mongodb://localhost:27017/cokkiri');
 
+var config = require('./config/config');
+
 app.use(session({
-    secret: 'CodeLab1$1$234',
+    secret: config.sessionSecret,
     resave: false,
     saveUninitialized: true
 }));
